@@ -1,0 +1,17 @@
+{{ const { contentArray } = Abell }}
+<html>
+<body>
+  <main>
+  <h2>Blogs</h2>
+  {{
+    contentArray.map(meta => /* html */ `
+      <article>
+        <h3>${meta.title}</h3>
+        <a href="${meta.$path}/">${meta.$path}</a>
+      </article>
+    `)
+  }}
+  <p>foo</p>
+  </main>
+</body>
+</html>

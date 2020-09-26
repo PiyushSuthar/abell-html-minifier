@@ -1,0 +1,6 @@
+{{ const { importContent, meta } = Abell }}
+<html>
+<body>
+  {{ importContent(meta.$path + '/index.md') }}
+</body>
+</html>
