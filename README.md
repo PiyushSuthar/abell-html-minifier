@@ -1,8 +1,15 @@
-# abell-plugin-starter
+# abell-html-minifier
+Minify your html files for ultimate speed.
 
+# Usage
 
-This starter is only for Abell v0.5+. 
-
-[plugin/index.js](plugin/index.js) is the file with all the code for plugin. 
-
-For detailed guide on how to use this starter, Check out https://abelljs.org/blog/how-to-build-plugins
+Install the plugin
+```sh
+npm install --save-dev abell-source-devto
+```
+```js
+// In abell.config.js
+module.exports = {
+  plugins: ['abell-html-minifier'],
+}
+```
