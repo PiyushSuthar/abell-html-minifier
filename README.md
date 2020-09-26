@@ -5,7 +5,7 @@ Minify your html files for ultimate speed.
 
 Install the plugin
 ```sh
-npm install --save-dev abell-source-devto
+npm install --save-dev abell-html-minifier
 ```
 ```js
 // In abell.config.js
