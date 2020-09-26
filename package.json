@@ -1,7 +1,7 @@
 {
-  "name": "abell-plugin-starter",
+  "name": "abell-html-minifier",
   "version": "1.0.0",
-  "description": "Plugin Starter for Abell v0.4+",
+  "description": "Minify your HTML for ultimate performance",
   "main": "plugin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saurabhdaware/abell-plugin-starter.git"
+    "url": "git+https://github.com/PiyushSuthar/abell-html-minifier.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["AbellJS", "Html Minifier", "html"],
+  "author": "Piyush Suthar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saurabhdaware/abell-plugin-starter/issues"
+    "url": "https://github.com/PiyushSuthar/abell-html-minifier/issues"
   },
-  "homepage": "https://github.com/saurabhdaware/abell-plugin-starter#readme",
+  "homepage": "https://github.com/PiyushSuthar/abell-html-minifier#readme",
   "devDependencies": {
     "abell": "^0.5.0"
   },
