@@ -10,9 +10,11 @@ function beforeHTMLWrite(htmlText, programInfo) {
    */
   const newHTMLText = minify(htmlText, {
     collapseWhitespace: true,
+    collapseInlineTagWhitespace: true,
     minifyCSS: true,
     removeComments: true,
-    minifyJS: true
+    minifyJS: true,
+    minifyURLs: true
   });
   return newHTMLText;
 }

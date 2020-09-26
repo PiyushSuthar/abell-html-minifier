@@ -1,6 +1,32 @@
-{{ const { importContent, meta } = Abell }}
+{{ const { importContent, meta } = Abell 
+  const Head = require('../components/Head.abell')
+  const Footer = require('../components/Footer.abell')
+}}
 <html>
+<head>
+<title>{{meta.title}}</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+  img{
+    width: 100%;
+  }
+  iframe{
+    width: 100%;
+    height: auto;
+  }
+  figure{
+    max-width: 100%
+  }
+  </style>
+</head>
 <body>
+<Head/>
+<div class="container shadow-2xl p-12 py-8 max-w-3xl mx-auto antialiased	">
+<h1 class="text-3xl py-5 font-bold">{{meta.title}}</h1>
+<div class="tracking-wide leading-relaxed">
   {{ importContent(meta.$path + '/index.md') }}
+</div>
+</div>
+  <Footer/>
 </body>
 </html>

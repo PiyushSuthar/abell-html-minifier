@@ -1,17 +1,19 @@
-{{ const { contentArray } = Abell }}
+{{ 
+  const { contentArray } = Abell 
+  const Head = require('./components/Head.abell')
+  const Cards = require('./components/Cards.abell')
+  const Footer = require('./components/Footer.abell')
+}}
 <html>
+<head>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<title>Innovative Beast</title>
+</head>
 <body>
+<Head/>
   <main>
-  <h2>Blogs</h2>
-  {{
-    contentArray.map(meta => /* html */ `
-      <article>
-        <h3>${meta.title}</h3>
-        <a href="${meta.$path}/">${meta.$path}</a>
-      </article>
-    `)
-  }}
-  <p>foo</p>
+  <Cards props={contentArray} />
   </main>
+  <Footer/>
 </body>
 </html>
