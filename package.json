@@ -1,6 +1,6 @@
 {
   "name": "abell-html-minifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minify your HTML for ultimate performance",
   "main": "plugin/index.js",
   "scripts": {
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/PiyushSuthar/abell-html-minifier.git"
   },
-  "keywords": ["AbellJS", "Html Minifier", "html"],
+  "keywords": [
+    "AbellJS",
+    "Html Minifier",
+    "html"
+  ],
   "author": "Piyush Suthar",
   "license": "MIT",
   "bugs": {
@@ -28,5 +32,4 @@
   "dependencies": {
     "html-minifier": "^4.0.0"
   }
-  
 }
